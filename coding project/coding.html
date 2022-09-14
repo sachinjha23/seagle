@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Grow your bussiness with us at very minimal price.">
+    <meta name="author" content="Sachin Jha">
+    <meta name="keywords" content="website,domain,hosting,webdesign,website builder">
+    <title>Seagle | Design</title>
+    <link rel="icon" href="coding/icon.webp">
+    <link rel="stylesheet" href="coding.css">
+</head>
+<body>
+    <div id="preloader">
+        <!-- <img src="coding/preloader.gif" alt=""> -->
+        <video src="coding/preloader.mp4" autoplay muted loop id="preloader"></video>
+    </div>
+    <nav id="navbar">
+        <img src="coding/eagle.webp" alt="">
+    </nav>
+    <div class="main">
+        <div class="main-img">
+            <div class="main-img-top">
+                <img src="coding/coding1.svg" alt="" id="mainImg">
+            </div>
+            <div class="main-img-bottom">
+                <div class="bottom-img" id="img1">
+                    <img src="coding/coding1.svg" alt="">
+                </div>
+                <div class="bottom-img" id="img2">
+                    <img src="coding/coding2.svg" alt="">
+                </div>
+                <div class="bottom-img" id="img3">
+                    <img src="coding/coding3.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="main-text">
+            <h1>Modern Portfolio Design</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit, qui obcaecati aspernatur ipsa optio placeat quo quaerat consequuntur similique libero.</p>
+            <p class="star">&starf; &starf; &starf; &starf; &star;</p>
+            <h2>Features</h2>
+            <p>&rarr; Lorem ipsum dolor sit amet.</p>
+            <p>&rarr; Lorem ipsum dolor sit ametipsum dolor sit amet.</p>
+            <p>&rarr; Lorem ipsum dolor sit.</p>
+            <p>&rarr; Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet</p>
+            <p>&rarr; Lorem ipsum dolor sit amet.</p>
+            <p>&rarr; Lorem ipsum dolor sit ametipsum dolor sit amet.</p>
+            <a href="https://wa.me/+918742920558" target="_blank"><button class="btn-a"> &#128222; WhatsApp</button></a>
+
+        </div>
+    </div>
+
+
+    <script>
+        let firstimg = document.getElementById("img1");
+        let secondimg = document.getElementById("img2");
+        let thirdimg = document.getElementById("img3");
+        let mainImg = document.getElementById("mainImg");
+
+        firstimg.addEventListener('click', () => {
+            mainImg.src = "coding/coding1.svg";
+        });
+        secondimg.addEventListener('click', () => {
+            mainImg.src = "coding/coding2.svg";
+        });
+        thirdimg.addEventListener('click', () => {
+            mainImg.src = "coding/coding3.svg";
+        });
+
+        let loader = document.getElementById("preloader");
+      window.addEventListener('load',()=>{
+        loader.style.display = "none";
+      });
+    </script>
+</body>
+</html>
